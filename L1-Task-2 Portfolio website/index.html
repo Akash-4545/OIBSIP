@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PortFolio Website</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:ital,wght@1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!--Icon link-->
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css">
+    
+</head>
+<body>
+    <div class="hero-header">
+        <div class="wrapper">          
+            <header>                            
+                <div class="logo">
+                        <i class="fa-solid fa-p"></i>
+                 <div class="logo-text">Port<span id="logo-text">Folio</span></div>
+                </div> 
+                <nav>   
+                    <ul class="navlinks">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="#about">About</a></li>
+                        <li><a href="#skills">My Skills</a></li>
+                        <li><a href="#services">Services</a></li>
+                        <li><a href="#contact">Contact</a></li>
+                    </ul>                   
+                </nav>
+            </header>
+        </div>
+            <div class="container" id="home">
+                <div class="hero-pic">
+                    <img src="images/pic4.png" alt="profile-pic">
+                </div>
+                <div class="hero-text">
+                    <h5>Hi I'm <span class="input">Frontend Developer</span></h5>
+                    <h1>Akash</h1>
+                    <p>"Any fool can write code that a computer can understand. Good programmers write code that humans can understand."
+                    </p>
+                    <div class="btn-group">
+                        <a href="#" class="btn active">Download CV</a>
+                        <a href="#" class="btn">Contact</a>
+                    </div>
+                    <div class="social">
+                        <a href="#"><i class="fa-brands fa-facebook"></i></a>
+                        <a href="#"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="#"><i class="fa-brands fa-dribbble"></i></a>
+                        <a href="#"><i class="fa-brands fa-pinterest"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.0.0/typed.min.js"></script>
+    <script>
+        var togglebtn=document.querySelector(".togglebtn");
+        var nav=document.querySelector(".navlinks");
+        var links=document.querySelector(".navlinks li");
+
+        togglebtn.addEventListener("click", function(){
+            this.classList.toggle("click");
+            nav.classList.toggle("open");
+        })
+        var typed =new Typed(".input",{
+            strings:["Frontend Developer","UX Developer","Web Developer"],
+            typedspeed:70,
+            backSpeed:55,
+            loop:true
+        })
+    </script>
+    <section class="about" id="about" style="transition-delay: 0.7s;">
+        <div class="main"> 
+            <div class="about-text">
+                <h1>About Us</h1>
+                <h5>Developer <span id="ds-1">& Designer</span></h5>
+                <p>Hello and welcome to my portfolio! My name is Akash Pawar, and I am a Post graduate in Computer Application with a focus on 
+                    web development. As a passionate and creative individual, I am constantly exploring new technologies and improving my skills 
+                    to create outstanding websites and web applications.Throughout my studies, I have gained experience in HTML, CSS, JavaScript, 
+                    and other web development tools. I have also worked on several personal and academic projects that have allowed me to hone my 
+                    skills in problem-solving, project management, and teamwork.I am excited about the opportunities that the field of web 
+                    development has to offer and am eager to contribute my skills and knowledge to innovative and challenging projects. If you 
+                    are looking for a reliable and enthusiastic web developer who can bring fresh ideas and creativity to your team, please don't
+                    hesitate to reach out to me.</p>
+                <button type="button" class="button-a">Lets's Talk</button>
+            </div>
+            <img src="images/pic1.JPG" alt="">
+        </div>
+    </section>
+
+    <div class="skills_section" id="skills">
+        <div class="skills_head">
+            <h2>My <span>Skills</span></h2>
+            <p>Here is my skills to represent my Expertise</p>
+        </div>
+
+        <div class="skills_main">
+            <div class="skill_bar">
+                <div class="info">
+                    <p>HTML</p>
+                    <P>90%</P>
+                </div>
+                <div class="bar">
+                    <span class="html"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>CSS</p>
+                    <P>85%</P>
+                </div>
+                <div class="bar">
+                    <span class="css"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>SASS</p>
+                    <P>50%</P>
+                </div>
+                <div class="bar">
+                    <span class="sass"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Java Script</p>
+                    <P>80%</P>
+                </div>
+                <div class="bar">
+                    <span class="js"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>React js</p>
+                    <P>60%</P>
+                </div>
+                <div class="bar">
+                    <span class="react"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Node js</p>
+                    <P>70%</P>
+                </div>
+                <div class="bar">
+                    <span class="node"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Express js</p>
+                    <P>50%</P>
+                </div>
+                <div class="bar">
+                    <span class="express"></span>
+                </div>
+            </div>
+            <div class="skill_bar">
+                <div class="info">
+                    <p>Mongo DB</p>
+                    <P>50%</P>
+                </div>
+                <div class="bar">
+                    <span class="mongo"></span>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <section class="service-section" id="services">
+
+        <!-- Header  -->
+        <div class="header">
+            <h2>What I <span>Offer</span></h2>
+            <p>Here is my Services</p>
+        </div>
+
+        <!-- Services Main  -->
+        <div class="container-s">
+            <div class="card">
+                <div class="logo">
+                    <i class="fas fa-code"></i>
+                </div>
+                <h2>Website Development</h2>
+                <p>website development requires a combination of technical expertise, creativity, and problem-solving skills to create a website 
+                    that meets the client's needs and provides a positive user experience.</p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fab fa-app-store"></i>
+                </div>
+                <h2>App Development</h2>
+                <p> app development can be an exciting and challenging field for web developers. It requires a willingness to learn and adapt 
+                    to new technologies, but can also offer opportunities for personal and professional growth.</p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fas fa-laptop-code"></i>
+                </div>
+                <h2>Web Designing</h2>
+                <p>Web design is the process of creating the visual and functional layout of a website. It involves considering the user 
+                    experience, visual aesthetics, and functionality of the website. </p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class='fas fa-photo-video'></i>
+                </div>
+                <h2>Graphic Designing</h2>
+                <p> The design should reflect the brand's identity and be consistent with its values and mission.a graphic designer can 
+                    create effective and impactful designs that connect with the audience and achieve the intended goals.</p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fas fa-list-ul"></i>
+                </div>
+                <h2>SEO Marketing</h2>
+                <p>SEO is a crucial aspect of digital marketing that can help businesses increase their visibility and reach more potential
+                     customers. SEO can help businesses</p>
+            </div>
+            <div class="card">
+                <div class="logo">
+                    <i class="fas fa-pencil-alt"></i>
+                </div>
+                <h2>Content Writing</h2>
+                <p>Content marketing is a strategic marketing approach that involves creating valuable and relevant content to attract and 
+                    engage a target audience. From a content marketing perspective, </p>
+            </div>
+        </div>
+    </section>
+
+    <script src="Font-Awesome/all.min.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js' ></script>
+    <script src="Js/main.js"></script>
+    <!--contact-->
+    <div class="main-c" id="contact">
+        <div class="container-c">
+            <div class="content">
+              <div class="left-side">
+                <div class="address details">
+                  <i class="fas fa-map-marker-alt"></i>
+                  <div class="topic">Address</div>
+                  <div class="text-one">Pune, 411062</div>
+                  <div class="text-two">Rupeenagar Alice soc</div>
+                </div>
+                <div class="phone details">
+                  <i class="fas fa-phone-alt"></i>
+                  <div class="topic">Phone</div>
+                  <div class="text-one">+91 9834939837</div>
+                  <div class="text-two">+91 9834938637</div>
+                </div>
+                <div class="email details">
+                  <i class="fas fa-envelope"></i>
+                  <div class="topic">Email</div>
+                  <div class="text-one">akashap0001@gmail.com</div>
+                  <div class="text-two">akash@gmail.com</div>
+                </div>
+              </div>
+              <div class="right-side">
+                <div class="topic-text">Send us a message</div>
+                <p>If you have any work from me or any types of quries related to my tutorial, you can send me message from here. It's my pleasure to help you.</p>
+              <form action="#">
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your name">
+                </div>
+                <div class="input-box">
+                  <input type="text" placeholder="Enter your email">
+                </div>
+                <div class="input-box message-box">
+                    <input type="text" placeholder="Enter your message">
+                </div>           
+                    <button type="button" class="button-c">Send Now</button>
+              </form>
+            </div>
+            </div>
+          </div>        
+    </div>
+    
+  <footer class="footer">
+    <div class="container-f">
+        <div class="row">
+            <div class="footer-col">
+                <h4>company</h4>
+                <ul>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">services</a></li>
+                    <li><a href="#">privacy policy</a></li>
+                    <li><a href="#">affiliate program</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>get help</h4>
+                <ul>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="#">story</a></li>
+                    <li><a href="#">status</a></li>
+                    <li><a href="#">feedback</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Mission</h4>
+                <ul>
+                    <li><a href="#">projects</a></li>
+                    <li><a href="#">tools</a></li>
+                    <li><a href="#">perks</a></li>
+                    <li><a href="#">workshop</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>follow us</h4>
+                <div class="social-links">
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                    <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+</footer>
+<div class="footer-l">
+    <p class="footer-p">Copyright &copy; 2023 All Rights Reserved by Akash     
+    </p>
+  </div>
+</body>
+</html>
